@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="sage.png">
+    <title>Insights - SAgE Research Group</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            padding-top: 3.5rem;
+        }
+        :root {
+            --accent-blue: #1a365d;
+            --hover-blue: #1e4b8c;
+        }
+        .btn-primary {
+            background-color: var(--accent-blue);
+            transition: background-color 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--hover-blue);
+        }
+        .text-accent {
+            color: var(--accent-blue);
+        }
+        .hover-text-accent:hover {
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-semibold hover:text-blue-600">
+                    SAgE Research Group
+                </a>
+                <!-- Mobile menu button -->
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html#projects" class="hover:text-blue-600">Projects</a>
+                    <a href="index.html#blogposts" class="hover:text-blue-600">Blog Posts</a>
+                    <a href="index.html#media" class="hover:text-blue-600">Media</a>
+                    <a href="insights.html" class="text-blue-600 font-medium">Insights</a>
+                    <a href="index.html#team" class="hover:text-blue-600">Team</a>
+                    <a href="index.html#upcoming-work" class="hover:text-blue-600">Upcoming Work</a>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#projects" class="hover:text-blue-600">Projects</a>
+                    <a href="index.html#blogposts" class="hover:text-blue-600">Blog Posts</a>
+                    <a href="index.html#media" class="hover:text-blue-600">Media</a>
+                    <a href="insights.html" class="text-blue-600 font-medium">Insights</a>
+                    <a href="index.html#team" class="hover:text-blue-600">Team</a>
+                    <a href="index.html#upcoming-work" class="hover:text-blue-600">Upcoming Work</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-8 py-16">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Insights</h1>
+            <p class="text-xl text-gray-600">Latest updates and insights from the HAL community on Twitter</p>
+        </div>
+
+        <!-- Tweets Section -->
+        <div class="space-y-8 mb-16">
+            <div class="flex justify-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">CORE-Bench is solved (using Opus 4.5 with Claude Code)<br><br>TL;DR: Last week, we released results for Opus 4.5 on CORE-Bench, a benchmark that tests agents on scientific reproducibility tasks. Earlier this week, Nicholas Carlini reached out to share that an updated scaffold that uses… <a href="https://t.co/vF2y4Fbe40">pic.twitter.com/vF2y4Fbe40</a></p>&mdash; Sayash Kapoor (@sayashk) <a href="https://twitter.com/sayashk/status/1996334941832089732?ref_src=twsrc%5Etfw">December 3, 2025</a></blockquote>
+            </div>
+            <div class="flex justify-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We spent the last year evaluating agents for HAL.<br><br>My biggest learning: We live in the Windows 95 era of agent evaluation. <a href="https://t.co/DeIzWm1f0c">pic.twitter.com/DeIzWm1f0c</a></p>&mdash; Sayash Kapoor (@sayashk) <a href="https://twitter.com/sayashk/status/1967998405852152039?ref_src=twsrc%5Etfw">September 16, 2025</a></blockquote>
+            </div>
+            <div class="flex justify-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">OpenAI claims hallucinations persist because evaluations reward guessing and that GPT-5 is better calibrated. Do results from HAL support this conclusion? On AssistantBench, a general web search benchmark, GPT-5 has higher precision and lower guess rates than o3! <a href="https://t.co/HxGgVLkIyN">pic.twitter.com/HxGgVLkIyN</a></p>&mdash; Peter Kirgis (@PKirgis) <a href="https://twitter.com/PKirgis/status/1966547382033936577?ref_src=twsrc%5Etfw">September 12, 2025</a></blockquote>
+            </div>
+            <div class="flex justify-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We have added ScienceAgentBench to HAL and evaluated it with leading models (GPT-5, o3, Opus 4.1). <br><br>o3 tops the leaderboard at a lower cost than GPT-5, Opus 4.1, and Sonnet 3.7 High. o4-mini Low is much cheaper than the crowd, but with similar accuracy.<br><br>Grateful to so many… <a href="https://t.co/Xw6iWhqDoe">https://t.co/Xw6iWhqDoe</a> <a href="https://t.co/1ZNXaLK7kz">pic.twitter.com/1ZNXaLK7kz</a></p>&mdash; Sayash Kapoor (@sayashk) <a href="https://twitter.com/sayashk/status/1966144670561612202?ref_src=twsrc%5Etfw">September 11, 2025</a></blockquote>
+            </div>
+            <div class="flex justify-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Can AI agents reliably navigate the web? Does the choice of agent scaffold affect web browsing ability? To answer these questions, we added Online Mind2Web, a web browsing benchmark, to the Holistic Agent Leaderboard (HAL). <br><br>We evaluated 9 models (including GPT-5 and Sonnet 4)… <a href="https://t.co/jwS2iFG27E">pic.twitter.com/jwS2iFG27E</a></p>&mdash; Sayash Kapoor (@sayashk) <a href="https://twitter.com/sayashk/status/1963343022252315112?ref_src=twsrc%5Etfw">September 3, 2025</a></blockquote>
+            </div>
+            <div class="flex justify-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How does GPT-5 compare against Claude Opus 4.1 on agentic tasks? <br><br>Since their release, we have been evaluating these models on challenging science, web, service, and code tasks. <br><br>Headline result: While cost-effective, so far GPT-5 never tops agentic leaderboards. More evals 🧵 <a href="https://t.co/KhVcXZN3fc">pic.twitter.com/KhVcXZN3fc</a></p>&mdash; Sayash Kapoor (@sayashk) <a href="https://twitter.com/sayashk/status/1953952498105946594?ref_src=twsrc%5Etfw">August 8, 2025</a></blockquote>
+            </div>
+            <div class="flex justify-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">GPT-OSS underperforms even on benchmarks that require raw tool calling. For example, CORE-Bench requires agents to run bash commands to reproduce scientific papers. <br><br>DeepSeek V3 scores 18%. <br>GPT-OSS scores 11%.<a href="https://t.co/EVxxSqKFMe">https://t.co/EVxxSqKFMe</a> <a href="https://t.co/tx8rTygUWw">pic.twitter.com/tx8rTygUWw</a></p>&mdash; Sayash Kapoor (@sayashk) <a href="https://twitter.com/sayashk/status/1955298275923210389?ref_src=twsrc%5Etfw">August 12, 2025</a></blockquote>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Stay Connected</h3>
+                <p class="text-gray-600 mb-6">
+                    Follow us on Twitter for the latest updates on agent evaluations, new benchmarks, and community insights.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://x.com/halevals" target="_blank"
+                       class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Follow @halevals
+                    </a>
+                    <a href="index.html"
+                       class="inline-flex items-center px-6 py-3 bg-white text-gray-700 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p>Princeton University</p>
+                    <p>Computer Science Department</p>
+                    <p>Princeton, NJ 08544</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.normaltech.ai/" class="hover:text-gray-300">AI As Normal Technology Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm mt-2 text-gray-400"><a href="https://www.flaticon.com/free-icons/sage" title="sage icons" class="hover:text-gray-300">Sage icons created by Icongeek26 - Flaticon</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Twitter Widgets Script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

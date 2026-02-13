@@ -32,14 +32,6 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- ICLR 2026 Acceptance Banner -->
-    <div class="bg-blue-600 text-white text-center py-3 px-4">
-        <p class="text-sm sm:text-base font-medium">
-            The HAL paper has been accepted to ICLR 2026!
-            <a href="https://arxiv.org/pdf/2510.11977" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-200 ml-1">Read the paper &rarr;</a>
-        </p>
-    </div>
-
     <!-- Navigation -->
     <nav class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3">
@@ -57,7 +49,9 @@
                 <div class="hidden md:flex space-x-6">
                     <a href="#projects" class="hover:text-blue-600">Projects</a>
                     <a href="#blogposts" class="hover:text-blue-600">Blog Posts</a>
-                    <a href="#media" class="hover:text-blue-600">Media</a>                    
+                    <a href="#media" class="hover:text-blue-600">Media</a>
+                    <a href="#press" class="hover:text-blue-600">Press</a>
+                    <a href="insights.html" class="hover:text-blue-600">Insights</a>
                     <a href="#team" class="hover:text-blue-600">Team</a>
                     <a href="#upcoming-work" class="hover:text-blue-600">Upcoming Work</a>
                 </div>
@@ -67,7 +61,9 @@
                 <div class="flex flex-col space-y-4">
                     <a href="#projects" class="hover:text-blue-600">Projects</a>
                     <a href="#blogposts" class="hover:text-blue-600">Blog Posts</a>
-                    <a href="#media" class="hover:text-blue-600">Media</a>                    
+                    <a href="#media" class="hover:text-blue-600">Media</a>
+                    <a href="#press" class="hover:text-blue-600">Press</a>
+                    <a href="insights.html" class="hover:text-blue-600">Insights</a>
                     <a href="#team" class="hover:text-blue-600">Team</a>
                     <a href="#upcoming-work" class="hover:text-blue-600">Upcoming Work</a>
                 </div>
@@ -112,7 +108,8 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- HAL Project -->
                 <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-semibold mb-3">HAL: The Holistic Agent Leaderboard</h3>
+                    <h3 class="text-xl font-semibold">HAL: The Holistic Agent Leaderboard</h3>
+                    <p class="text-sm text-gray-500 mb-3">Accepted to <a href="https://iclr.cc/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">ICLR 2026 ↗</a></p>
                     <p class="text-gray-600 mb-4">
                         The standardized, cost-aware, and third-party leaderboard for evaluating agents. 
                     </p>
@@ -146,9 +143,10 @@
                     </div>
                 </div>
 
-                <!-- AgentBench -->
+                <!-- Inference Scaling fLaws -->
                 <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-semibold mb-3">Inference Scaling fLaws</h3>
+                    <h3 class="text-xl font-semibold">Inference Scaling fLaws</h3>
+                    <p class="text-sm text-gray-500 mb-3">Accepted to <a href="https://iclr.cc/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">ICLR 2026 ↗</a></p>
                     <p class="text-gray-600 mb-4">
                         Paper on the limits of LLM resampling with imperfect verifiers. We analyze when inference scaling of weaker models can enable them to match the single-sample accuracy of a sufficiently strong model.
                     </p>
@@ -276,6 +274,51 @@
                         <div>
                             <h5 class="font-semibold"><a href="https://venturebeat.com/ai/ai-agent-benchmarks-are-misleading-study-warns/" class="text-accent hover:text-blue-600">AI agent benchmarks are misleading, study warns - VentureBeat</a></h5>
                             <p class="text-gray-600">Coverage of our work on agent evaluation methodologies and pitfalls.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Press Coverage -->
+            <div id="press" class="mt-16">
+                <h3 class="text-2xl font-semibold mb-6">Press Coverage</h3>
+                <div class="space-y-4">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between p-6 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h5 class="font-semibold text-gray-900 mb-1">
+                                <a href="https://www.ft.com/content/d01290c9-cc92-4c1f-bd70-ac332cd40f94" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-blue-600 transition-colors">
+                                    Is AI hitting a wall?
+                                </a>
+                            </h5>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <span class="font-medium">Financial Times</span>
+                                <span class="mx-2">&bull;</span>
+                                <span>August 2025</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <a href="https://www.ft.com/content/d01290c9-cc92-4c1f-bd70-ac332cd40f94" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                                Read &rarr;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between p-6 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h5 class="font-semibold text-gray-900 mb-1">
+                                <a href="https://www.wired.com/story/gpt-5-coding-review-software-engineering/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-blue-600 transition-colors">
+                                    Developers Say GPT-5 Is a Mixed Bag
+                                </a>
+                            </h5>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <span class="font-medium">WIRED</span>
+                                <span class="mx-2">&bull;</span>
+                                <span>August 2025</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <a href="https://www.wired.com/story/gpt-5-coding-review-software-engineering/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                                Read &rarr;
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -450,14 +493,7 @@
     <section id="upcoming-work" class="py-8 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8">Upcoming Work</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-semibold mb-3">Agent Zoo</h3>
-                    <p class="text-gray-600">
-                        We are studying the ability of AI agents to collectively self-improve towards a common goal.
-                    </p>
-                </div>
-
+            <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-xl shadow-sm">
                     <h3 class="text-xl font-semibold mb-3">Detecting errors in ML research</h3>
                     <p class="text-gray-600">
@@ -475,23 +511,31 @@
         </div>
     </section>
 
-    <!-- Funding Section
-    <section class="py-8 bg-white">
+    <!-- Funding Section -->
+    <section class="py-12 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8">Funding</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-3">Open Philanthropy Foundation</h3>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-3">Princeton AI Lab Seed Grant</h3>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl">
-                    <h3 class="text-xl font-semibold mb-3">Schmidt Sciences Grant</h3>
+            <div class="flex flex-col items-center space-y-6">
+                <p class="text-gray-600 text-center max-w-3xl">
+                    Funded by Open Philanthropy, Schmidt Sciences, the <a href="https://ai.princeton.edu/ai-lab" target="_blank" class="text-blue-600 hover:text-blue-800">Princeton AI Lab</a>, the <a href="https://pli.princeton.edu/" target="_blank" class="text-blue-600 hover:text-blue-800">Princeton Language and Intelligence</a> Initiative, and the Princeton Catalysis Initiative. We are grateful to OpenAI and Google for providing API credits to evaluate their models.
+                </p>
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <a href="https://www.princeton.edu/" target="_blank" class="hover:opacity-80 transition-opacity">
+                        <img src="princeton.png" alt="Princeton University Logo" class="h-12 object-contain">
+                    </a>
+                    <a href="https://citp.princeton.edu/" target="_blank" class="hover:opacity-80 transition-opacity">
+                        <img src="citp.png" alt="CITP Logo" class="h-20 object-contain">
+                    </a>
+                    <a href="https://pli.princeton.edu/" target="_blank" class="hover:opacity-80 transition-opacity">
+                        <img src="pli.png" alt="Princeton Language and Intelligence Logo" class="h-12 object-contain">
+                    </a>
+                    <a href="https://ai.princeton.edu/ai-lab" target="_blank" class="hover:opacity-80 transition-opacity">
+                        <img src="ailab.png" alt="Princeton AI Lab Logo" class="h-10 object-contain">
+                    </a>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12 mt-16">
