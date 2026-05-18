@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +50,7 @@
                 <div class="hidden md:flex space-x-6">
                     <a href="#projects" class="hover:text-blue-600">Projects</a>
                     <a href="#blogposts" class="hover:text-blue-600">Blog Posts</a>
-                    <a href="#media" class="hover:text-blue-600">Media</a>
+                    <a href="#media" class="hover:text-blue-600">Talks and media</a>
                     <a href="insights.html" class="hover:text-blue-600">Insights</a>
                     <a href="#team" class="hover:text-blue-600">Team</a>
                 </div>
@@ -59,7 +60,7 @@
                 <div class="flex flex-col space-y-4">
                     <a href="#projects" class="hover:text-blue-600">Projects</a>
                     <a href="#blogposts" class="hover:text-blue-600">Blog Posts</a>
-                    <a href="#media" class="hover:text-blue-600">Media</a>
+                    <a href="#media" class="hover:text-blue-600">Talks and media</a>
                     <a href="insights.html" class="hover:text-blue-600">Insights</a>
                     <a href="#team" class="hover:text-blue-600">Team</a>
                 </div>
@@ -102,17 +103,64 @@
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-12">Key Projects & Publications</h2>
             <div class="grid md:grid-cols-3 gap-8">
+                <!-- Open-World Evaluations -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold">Open-World Evaluations</h3>
+                    <p class="text-gray-600 mb-4">
+                        A survey of an emerging paradigm for evaluating frontier AI through long-horizon, real-world tasks that complement traditional benchmarks.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://cruxevals.com/open-world-evaluations.pdf" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Paper</a>
+                    </div>
+                </div>
+
+                <!-- CRUX -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold">CRUX: Collaborative Research for Updating AI eXpectations</h3>
+                    <p class="text-gray-600 mb-4">
+                        A project for regularly conducting open-world evaluations to track AI capabilities. In CRUX #1, we tasked an agent with building and publishing an iOS app to the App Store.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://cruxevals.com" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Website</a>
+                        <a href="https://cruxevals.com/crux-1" class="btn-primary text-white px-3 py-1.5 rounded text-sm">CRUX #1</a>
+                    </div>
+                </div>
+
+                <!-- Agent Reliability -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold">Agent Reliability</h3>
+                    <p class="text-sm text-gray-500 mb-3">Forthcoming in <a href="https://icml.cc/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">ICML 2026 ↗</a></p>
+                    <p class="text-gray-600 mb-4">
+                        Understanding and improving the reliability of AI agents.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://hal.cs.princeton.edu/reliability" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Website</a>
+                        <a href="https://arxiv.org/abs/2602.16666" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Paper</a>
+                    </div>
+                </div>
+
                 <!-- HAL Project -->
                 <div class="bg-white p-6 rounded-xl shadow-sm">
                     <h3 class="text-xl font-semibold">HAL: The Holistic Agent Leaderboard</h3>
-                    <p class="text-sm text-gray-500 mb-3">Accepted to <a href="https://iclr.cc/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">ICLR 2026 ↗</a></p>
+                    <p class="text-sm text-gray-500 mb-3">Published in <a href="https://iclr.cc/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">ICLR 2026 ↗</a></p>
                     <p class="text-gray-600 mb-4">
-                        The standardized, cost-aware, and third-party leaderboard for evaluating agents. 
+                        The standardized, cost-aware, and third-party leaderboard for evaluating agents.
                     </p>
                     <div class="flex space-x-4">
                         <a href="https://hal.cs.princeton.edu" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Leaderboards</a>
                         <a href="https://github.com/princeton-pli/hal-harness/tree/main" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Harness</a>
                         <a href="https://arxiv.org/pdf/2510.11977" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Paper</a>
+                    </div>
+                </div>
+
+                <!-- Log Analysis -->
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold">Log Analysis for Credible Agent Evaluation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Agent benchmarks that report only pass/fail outcomes lose critical information; systematic log analysis is necessary to assess internal validity, external validity, and safety.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://arxiv.org/abs/2605.08545" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Paper</a>
                     </div>
                 </div>
 
@@ -164,18 +212,6 @@
                         <a href="https://www.youtube.com/watch?v=-aKRsvgDEz0&ab_channel=PrincetonLanguage%26Intelligence" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Recording</a>
                     </div>
                 </div>
-
-                <!-- Agent Reliability -->
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-semibold mb-3">Agent Reliability</h3>
-                    <p class="text-gray-600 mb-4">
-                        Understanding and improving the reliability of AI agents.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://hal.cs.princeton.edu/reliability" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Website</a>
-                        <a href="https://arxiv.org/abs/2602.16666" class="btn-primary text-white px-3 py-1.5 rounded text-sm">Paper</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -216,6 +252,30 @@
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="bg-gray-50 p-6 rounded-lg">
                         <span class="text-sm text-accent font-semibold">AI As Normal Technology Blog</span>
+                        <h4 class="text-xl font-semibold mt-2 mb-3"><a href="https://www.normaltech.ai/p/open-world-evaluations-for-measuring" class="text-accent hover:text-blue-600">Open-world evaluations for measuring frontier AI capabilities</a></h4>
+                        <p class="text-gray-600 mb-4">Why we need evaluations beyond benchmarks, and how to do them well</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">April 2026</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <span class="text-sm text-accent font-semibold">AI As Normal Technology Blog</span>
+                        <h4 class="text-xl font-semibold mt-2 mb-3"><a href="https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai" class="text-accent hover:text-blue-600">New paper: Towards a science of AI agent reliability</a></h4>
+                        <p class="text-gray-600 mb-4">Defining and measuring the capability-reliability gap in AI agents</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">February 2026</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <span class="text-sm text-accent font-semibold">AI As Normal Technology Blog</span>
+                        <h4 class="text-xl font-semibold mt-2 mb-3"><a href="https://www.normaltech.ai/p/agi-is-not-a-milestone" class="text-accent hover:text-blue-600">AGI is not a milestone</a></h4>
+                        <p class="text-gray-600 mb-4">Why AGI does not represent a discontinuity in AI capabilities or impacts</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm">May 2025</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <span class="text-sm text-accent font-semibold">AI As Normal Technology Blog</span>
                         <h4 class="text-xl font-semibold mt-2 mb-3"><a href="https://www.normaltech.ai/p/is-ai-progress-slowing-down" class="text-accent hover:text-blue-600">Is AI Progress Slowing Down?</a></h4>
                         <p class="text-gray-600 mb-4">Making sense of recent technology trends and claims</p>
                         <div class="flex justify-between items-center">
@@ -251,8 +311,41 @@
 
             <!-- Media Appearances -->
             <div>
-                <h3 id="media" class="text-2xl font-semibold mb-6">Media</h3>
+                <h3 id="media" class="text-2xl font-semibold mb-6">Talks and media</h3>
                 <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold"><a href="https://fortune.com/2026/03/24/ai-agents-are-getting-more-capable-but-reliability-is-lagging-narayanan-kapoor/" class="text-accent hover:text-blue-600">AI agents are getting more capable, but reliability is lagging - Fortune</a></h5>
+                            <p class="text-gray-600">Coverage of our research on the capability-reliability gap in AI agents.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold"><a href="https://www.youtube.com/watch?v=GAuCE9tZJhM" class="text-accent hover:text-blue-600">AI Agents: Taking Stock and Looking Ahead - ODSC Conference Talk</a></h5>
+                            <p class="text-gray-600">Keynote on the state of AI agent evaluation and where the field needs to go.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-gray-100 p-3 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold"><a href="https://www.youtube.com/watch?v=NoVMk_P6fgY" class="text-accent hover:text-blue-600">Unpacking AI Agent Hype vs. Reality - ODSC AI X Podcast</a></h5>
+                            <p class="text-gray-600">Discussion on agent benchmarking challenges and the gap between agent hype and real-world performance.</p>
+                        </div>
+                    </div>
                     <div class="flex items-start">
                         <div class="bg-gray-100 p-3 rounded-lg mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -317,17 +410,6 @@
                         <div>
                             <h5 class="font-semibold"><a href="https://www.wired.com/story/gpt-5-coding-review-software-engineering/" class="text-accent hover:text-blue-600">Developers Say GPT-5 Is a Mixed Bag - WIRED</a></h5>
                             <p class="text-gray-600">Analysis of GPT-5's performance on coding and software engineering tasks.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-gray-100 p-3 rounded-lg mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h5 class="font-semibold"><a href="https://fortune.com/2026/03/24/ai-agents-are-getting-more-capable-but-reliability-is-lagging-narayanan-kapoor/" class="text-accent hover:text-blue-600">AI agents are getting more capable, but reliability is lagging - Fortune</a></h5>
-                            <p class="text-gray-600">Coverage of AI agent capabilities and the growing reliability gap in agent evaluation.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
@@ -496,3 +578,4 @@
     </script>
 </body>
 </html>
+
